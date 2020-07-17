@@ -5,4 +5,4 @@ if (num % 2 == 0) {
 else {
 	var result = "odd";
 }
-console.log(result);
+console.log("The number entered is " + num + " and Number is " + result);
