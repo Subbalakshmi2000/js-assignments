@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Changing page colours</title>
+<script language="JavaScript1.2">
+colors = new Array("red","orange","green","blue","brown","purple","gray","white","pink","black")
+
+colorIndex = 0
+
+function changeColor() {
+ document.bgColor = colors[colorIndex]
+ colorIndex = (colorIndex + 1) % colors.length
+}
+
+function startColorChange() {
+ setInterval("changeColor()",5000)
+}
+
+window.onload = startColorChange
+</script>
+
+</head>
+<body background="white">
+</body>
+</html>
