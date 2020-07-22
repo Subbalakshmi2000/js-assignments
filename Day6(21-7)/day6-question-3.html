@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>welcome page</title>
+	<style type="text/css">
+		button{ 
+            cursor: pointer; 
+            border: 1px solid #555; 
+            text-align: center; 
+            padding: 5px; 
+            margin-left: 8px;  
+        } 
+        .dark{ 
+            background-color: #222; 
+            color: #e6e6e6; 
+        } 
+	</style>
+</head>
+<body>
+	<button onclick="myFunction()">Switch mode</button>  
+      
+	<div style="text-align:center;width:50%;height:auto;color: #160eed;background-color: aquamarine;
+    padding: 20px;font-size: xxx-large;margin: auto;">
+            <span id="hr">00</span>
+            <span> : </span>
+            <span id="min">00</span>
+            <span> : </span>
+            <span id="sec">00</span>
+        </div>
+	<script type="text/javascript" src="day6-question-3.js"></script>
+	<script type="text/javascript">
+		var str = prompt("Enter your name");
+		document.write("Hello "+str+". "+"Welcome to this web page. How are you?");
+	</script>
+
+
+    <script> 
+        function myFunction() { 
+        var element = document.body; 
+        element.classList.toggle("dark"); 
+        } 
+    </script> 
+</body>
+</html>
