@@ -45,6 +45,10 @@ class Admin extends Moderator{
 		user.courses.push(course);
 		console.log(user);
 	}
+	deleteCourse(user,course) {
+		user.courses.pop(course);
+		console.log(user);
+	}
 }
 let admin = new Admin("Sanjana",20,"sanjana123@gmail.com");
 
@@ -57,3 +61,5 @@ admin.addCourse(user1,"javascript");
 admin.addCourse(user2,"web development");
 admin.addCourse(user1,"java");
 admin.addCourse(user2,"python");
+
+admin.deleteCourse(user2,"python");
